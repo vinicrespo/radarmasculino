@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar Masculino | Consultoría Privada</title>
+
+    <!-- VTurb Speed Optimization -->
+    <script>!function (i, n) { i._plt = i._plt || (n && n.timeOrigin ? n.timeOrigin + n.now() : Date.now()) }(window, performance);</script>
+    <link rel="preload"
+        href="https://scripts.converteai.net/d21a9e1d-910e-4254-b2bc-30b12586d2ef/players/69680c2afc0e7a38b23cd659/v4/player.js"
+        as="script">
+    <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+    <link rel="preload"
+        href="https://cdn.converteai.net/d21a9e1d-910e-4254-b2bc-30b12586d2ef/69680c0a78c562fc7419b45a/main.m3u8"
+        as="fetch">
+    <link rel="dns-prefetch" href="https://cdn.converteai.net">
+    <link rel="dns-prefetch" href="https://scripts.converteai.net">
+    <link rel="dns-prefetch" href="https://images.converteai.net">
+    <link rel="dns-prefetch" href="https://api.vturb.com.br">
+    <link rel="icon" type="image/png" href="public/radar_masculino_logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDF8F5',      // Base clara
+                        wine: '#4A1520',       // Vinho Nobre
+                        wineLight: '#5D1924',  // Vinho mais claro para gradiente
+                        gold: '#C8A678',       // Dourado Luxo
+                        bodyText: '#333333',   // Texto leitura (Cinza Escuro)
+                        whiteSoft: '#FAFAFA',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Montserrat"', 'sans-serif'], // Alterado para Montserrat conforme pedido de legibilidade
+                    },
+                    boxShadow: {
+                        'gold': '0 4px 20px -2px rgba(200, 166, 120, 0.4)',
+                        'card': '0 10px 30px -5px rgba(0, 0, 0, 0.08)',
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .gold-border-gradient {
+            background: linear-gradient(135deg, #C8A678 0%, #E5Cca5 50%, #C8A678 100%);
+        }
+
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #C8A678 0%, #B08D55 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @keyframes pulse-slow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(74, 21, 32, 0.4);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(74, 21, 32, 0);
+            }
+        }
+
+        .animate-pulse-slow {
+            animation: pulse-slow 3s infinite;
+        }
+    </style>
+
+    <!-- UTMify Pixel -->
+    <script>
+        window.pixelId = "69681e0696ff82a9a1f74689";
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+    </script>
+    
+    <!-- Hotmart UTM -->
+    <script
+        src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+        data-utmify-prevent-subids
+        async
+        defer
+    ></script>
+
+</head>
+
+<body class="bg-[#F0EEEA] text-bodyText antialiased font-sans flex justify-center min-h-screen">
+
+    <!-- Mobile Constraint Wrapper -->
+    <main class="w-full max-w-[480px] bg-cream shadow-2xl min-h-screen flex flex-col relative">
+
+        <!-- ========================================== -->
+        <!-- SEÇÃO 1: HERO & VSL -->
+        <!-- ========================================== -->
+        <section class="px-6 pt-10 pb-12 text-center bg-cream relative overflow-hidden">
+            <!-- Decorative Background Element -->
+            <div class="absolute top-0 left-0 w-full h-2 bg-wine"></div>
+
+            <p class="text-[10px] tracking-[0.2em] text-gold uppercase font-bold mb-4 font-sans">Método Radar Masculino
+            </p>
+
+            <!-- Headline -->
+            <h1 class="font-serif text-3xl font-bold leading-tight mb-4 text-wine">
+                "El viernes me dijo 'eres especial'. El lunes me dejó en visto."
+            </h1>
+
+            <!-- Subheadline -->
+            <p class="text-sm text-bodyText mb-8 leading-relaxed max-w-[300px] mx-auto font-sans font-medium">
+                No es mala suerte. En 15 minutos vas a entender por qué.
+            </p>
+
+            <!-- VSL Container (Gold Border) -->
+            <div
+                class="relative w-full p-1 bg-gradient-to-tr from-[#C8A678] to-[#E6D2B5] rounded-tl-[30px] rounded-br-[30px] rounded-tr-md rounded-bl-md shadow-2xl mb-8">
+                <div
+                    class="relative w-full bg-black rounded-tl-[26px] rounded-br-[26px] rounded-tr-sm rounded-bl-sm overflow-hidden group">
+                    <!-- VTurb Embed -->
+                    <vturb-smartplayer id="vid-69680c2afc0e7a38b23cd659"
+                        style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>
+                    <script
+                        type="text/javascript"> var s = document.createElement("script"); s.src = "https://scripts.converteai.net/d21a9e1d-910e-4254-b2bc-30b12586d2ef/players/69680c2afc0e7a38b23cd659/v4/player.js", s.async = !0, document.head.appendChild(s); </script>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- WRAPPER FOR CONTENT -->
+        <div class="flex flex-col">
+
+            <!-- CTA Button 1 -->
+            <div class="px-6 pb-12 bg-cream">
+                <a href="#offer" id="hero-cta"
+                    class="block w-full bg-gradient-to-r from-wineLight to-wine text-white font-sans font-bold text-center py-4 rounded-sm border-b-2 border-r-2 border-gold shadow-lg transform transition hover:-translate-y-1 hover:shadow-xl active:translate-y-0 uppercase tracking-widest text-sm">
+                    ACTIVAR MI RADAR POR $1.90
+                </a>
+            </div>
+
+            <!-- ========================================== -->
+            <!-- SEÇÃO 2: O PROBLEMA (High Contrast) -->
+            <!-- ========================================== -->
+            <section class="px-6 py-16 bg-wine text-center text-white relative">
+                <!-- Decorative Triangle Removed per user request -->
+
+                <h2 class="font-serif text-2xl font-bold mb-10 text-white">
+                    <span class="block text-gold text-xs font-sans tracking-widest uppercase mb-2">Diagnóstico</span>
+                    ¿Te suena familiar?
+                </h2>
+
+                <div class="space-y-10">
+                    <!-- Pain Point 1 -->
+                    <div class="flex flex-col items-center">
+                        <div class="text-3xl text-gold mb-3 opacity-90"><i class="far fa-comment-dots"></i></div>
+                        <h3 class="font-serif text-lg italic mb-2">El Silencio Repentino</h3>
+                        <p class="text-gray-200 text-sm leading-relaxed max-w-xs font-sans">Todo iba bien, conexión
+                            perfecta, y de la nada... él desaparece sin explicación.</p>
+                    </div>
+
+                    <!-- Pain Point 2 -->
+                    <div class="flex flex-col items-center">
+                        <div class="text-3xl text-gold mb-3 opacity-90"><i class="fas fa-heart-broken"></i></div>
+                        <h3 class="font-serif text-lg italic mb-2">Hombres "Indecisos"</h3>
+                        <p class="text-gray-200 text-sm leading-relaxed max-w-xs font-sans">Atraes hombres que dicen que
+                            "no están listos" (pero a las semanas se comprometen con otra).</p>
+                    </div>
+
+                    <!-- Pain Point 3 -->
+                    <div class="flex flex-col items-center">
+                        <div class="text-3xl text-gold mb-3 opacity-90"><i class="fas fa-balance-scale-right"></i></div>
+                        <h3 class="font-serif text-lg italic mb-2">Das Mucho, Recibes Poco</h3>
+                        <p class="text-gray-200 text-sm leading-relaxed max-w-xs font-sans">Sientes que siempre eres tú
+                            la que invierte más energía en la relación.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SEÇÃO 3: O MÉTODO (Deep Dive) -->
+            <!-- ========================================== -->
+            <section class="px-6 py-16 bg-cream">
+                <div class="text-center mb-12">
+                    <h2 class="font-serif text-2xl font-bold text-wine leading-tight">
+                        Lo que hay dentro del <br><span class="italic text-gold">Sistema Radar Masculino</span>
+                    </h2>
+                </div>
+
+                <div class="relative border-l border-gold/30 ml-4 pl-8 space-y-12">
+                    <!-- Pillar 1 -->
+                    <div class="relative">
+                        <div
+                            class="absolute -left-[41px] top-0 w-6 h-6 rounded-full bg-cream border-2 border-gold flex items-center justify-center text-[10px] font-bold text-gold font-sans">
+                            1</div>
+                        <h3 class="font-serif text-xl font-bold text-wine mb-2">La Calibración</h3>
+                        <p class="text-xs font-bold text-gold uppercase tracking-wide mb-3 font-sans">El Diagnóstico</p>
+                        <p class="text-sm text-bodyText leading-relaxed font-sans">
+                            Un test psicológico profundo para identificar qué "señal" estás emitiendo. ¿Eres la 'Mamá',
+                            la 'Amiga' o la 'Elegida'? Corregir esto cambia todo.
+                        </p>
+                    </div>
+
+                    <!-- Pillar 2 -->
+                    <div class="relative">
+                        <div
+                            class="absolute -left-[41px] top-0 w-6 h-6 rounded-full bg-cream border-2 border-gold flex items-center justify-center text-[10px] font-bold text-gold font-sans">
+                            2</div>
+                        <h3 class="font-serif text-xl font-bold text-wine mb-2">La Decodificación</h3>
+                        <p class="text-xs font-bold text-gold uppercase tracking-wide mb-3 font-sans">Traductor
+                            Masculino</p>
+                        <p class="text-sm text-bodyText leading-relaxed font-sans">
+                            Aprende a leer entre líneas. Cuando él dice "necesito tiempo", sabrás exactamente si es
+                            verdad o una excusa, y cómo responder.
+                        </p>
+                    </div>
+
+                    <!-- Pillar 3 -->
+                    <div class="relative">
+                        <div
+                            class="absolute -left-[41px] top-0 w-6 h-6 rounded-full bg-cream border-2 border-gold flex items-center justify-center text-[10px] font-bold text-gold font-sans">
+                            3</div>
+                        <h3 class="font-serif text-xl font-bold text-wine mb-2">La Inversión</h3>
+                        <p class="text-xs font-bold text-gold uppercase tracking-wide mb-3 font-sans">Scripts de Poder
+                        </p>
+                        <p class="text-sm text-bodyText leading-relaxed font-sans">
+                            Scripts exactos para dejar de perseguir y activar su instinto de cazador. Haz que él tema
+                            perderte.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SEÇÃO 4: PROVA SOCIAL (Updated Design) -->
+            <!-- ========================================== -->
+            <section class="bg-whiteSoft py-20 px-6">
+                <h2 class="font-serif text-2xl font-bold text-center text-wine mb-10">
+                    Resultados Reales
+                </h2>
+
+                <div class="space-y-6">
+                    <!-- Review 1 -->
+                    <div class="bg-white p-6 shadow-card border border-gray-100 rounded-xl relative">
+                        <div class="flex items-center mb-4">
+                            <!-- Placeholder Image 1 -->
+                            <img src="https://i.pravatar.cc/150?img=9" alt="Valentina"
+                                class="w-12 h-12 rounded-full object-cover border-2 border-gold/50 mr-4">
+                            <div>
+                                <h4 class="text-sm font-bold text-wine font-sans">Valentina G.</h4>
+                                <div class="flex text-gold text-[10px] gap-1">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="font-sans text-sm text-gray-700 leading-relaxed">
+                            "Me siento poderosa. Antes vivía ansiosa esperando su mensaje. Ahora él es quien me busca
+                            para saber dónde estoy. El cambio fue inmediato."
+                        </p>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="bg-white p-6 shadow-card border border-gray-100 rounded-xl relative">
+                        <div class="flex items-center mb-4">
+                            <!-- Placeholder Image 2 -->
+                            <img src="https://i.pravatar.cc/150?img=5" alt="Mariana"
+                                class="w-12 h-12 rounded-full object-cover border-2 border-gold/50 mr-4">
+                            <div>
+                                <h4 class="text-sm font-bold text-wine font-sans">Mariana S.</h4>
+                                <div class="flex text-gold text-[10px] gap-1">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="font-sans text-sm text-gray-700 leading-relaxed">
+                            "Entendí mi valor. No sabía que yo misma estaba alejando a los hombres buenos. El 'Radar' me
+                            mostró exactamente qué hacer."
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SEÇÃO 5: PREÇOS (New Professional Cards) -->
+            <!-- ========================================== -->
+            <section id="offer" class="px-5 py-20 bg-gray-50">
+                <h2 class="font-serif text-2xl font-bold text-center text-wine mb-2">
+                    Tu Felicidad vale más que un Café
+                </h2>
+                <p class="text-center text-xs text-bodyText mb-10 uppercase tracking-widest font-sans">Elige tu Opción
+                </p>
+
+                <div class="flex flex-col gap-8">
+
+                    <!-- CARD 1: BASIC -->
+                    <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm relative">
+                        <h3 class="font-serif text-xl font-bold text-gray-700 mb-2">Plan Básico</h3>
+                        <p class="text-xs text-gray-500 mb-6 font-sans">Acceso esencial al método.</p>
+
+                        <div class="text-4xl font-sans font-bold text-gray-800 mb-6">$1.90</div>
+
+                        <ul class="space-y-3 mb-8 text-sm text-gray-600 font-sans">
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> El
+                                Diagnóstico Radar Masculino</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Acceso de
+                                por vida</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i>
+                                Actualizaciones gratuitas</li>
+                            <li class="flex items-center gap-3 opacity-50"><i class="fas fa-times text-red-300"></i> Sin
+                                Bonos</li>
+                        </ul>
+
+                        <button id="btn-basic" onclick="openUpsell()"
+                            class="w-full py-3 border border-wine text-wine rounded-lg font-bold text-sm hover:bg-wine hover:text-white transition-all font-sans uppercase tracking-wide">
+                            OBTENER PLAN
+                        </button>
+                    </div>
+
+                    <!-- CARD 2: VIP -->
+                    <div
+                        class="bg-white rounded-xl p-6 border-2 border-gold shadow-2xl relative transform scale-[1.02] z-10">
+                        <div
+                            class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-wine text-gold px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-md whitespace-nowrap">
+                            🔥 EL MÁS VENDIDO
+                        </div>
+
+                        <h3 class="font-serif text-2xl font-bold text-wine mb-2 mt-2">Plan Completo</h3>
+                        <p class="text-xs text-gold font-bold uppercase tracking-widest mb-6 font-sans">Todo Incluido
+                        </p>
+
+                        <div class="flex items-baseline gap-2 mb-6">
+                            <span class="text-5xl font-sans font-bold text-wine">$4.90</span>
+                        </div>
+
+                        <ul class="space-y-4 mb-8 text-sm text-gray-700 font-sans font-medium">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check text-green-500 mt-1"></i>
+                                <span><strong>Incluye todo lo del Plan Básico</strong></span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check text-green-500 mt-1"></i>
+                                <span><strong>Acceso de por vida y Actualizaciones</strong></span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check text-green-500 mt-1"></i>
+                                <span><strong>Bono 1:</strong> Manual de Mensajes Magnéticos</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check text-green-500 mt-1"></i>
+                                <span><strong>Bono 2:</strong> El Gatillo de la Obsesión</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check text-green-500 mt-1"></i>
+                                <span><strong>Bono 3:</strong> SOS "Me Dejó en Visto"</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check text-green-500 mt-1"></i>
+                                <span><strong>Bono 4:</strong> Detox del Ex</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check text-green-500 mt-1"></i>
+                                <span><strong>Bono 5:</strong> Checklist de la Primera Cita</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check text-green-500 mt-1"></i>
+                                <span><strong>Bono 6:</strong> El Arte de las Historias</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check text-green-500 mt-1"></i>
+                                <span><strong>Bono 7:</strong> Reprogramación de la Autoestima</span>
+                            </li>
+                        </ul>
+
+                        <a href="#"
+                            class="block w-full bg-[#4A1520] text-white font-sans font-bold text-center py-4 rounded-lg shadow-gold hover:bg-wineLight transition-all animate-pulse-slow uppercase tracking-wide text-sm">
+                            OBTENER PLAN
+                        </a>
+                        <p class="text-center text-[10px] text-gray-400 mt-3 font-sans">Compra Segura & Encriptada</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SEÇÃO 6: FAQ & GARANTIA -->
+            <!-- ========================================== -->
+            <section class="bg-white px-6 py-16">
+                <!-- Guarantee Seal -->
+                <div class="flex flex-col items-center text-center mb-12">
+                    <div class="w-20 h-20 mb-4 border-2 border-gold rounded-full flex items-center justify-center p-1">
+                        <div
+                            class="w-full h-full border border-gold rounded-full flex items-center justify-center bg-cream">
+                            <i class="fas fa-shield-alt text-2xl text-wine"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-wine mb-2">Garantía Incondicional</h3>
+                    <p class="text-xs text-gray-500 max-w-xs leading-relaxed font-sans">
+                        Tienes 7 días de garantía. Si no te gusta, te devolvemos el 100% de tu dinero. Sin preguntas.
+                    </p>
+                </div>
+
+                <!-- Native HTML Accordion FAQ -->
+                <div class="border-t border-gray-100 pt-8 space-y-4 font-sans max-w-md mx-auto">
+
+                    <details class="group border-b border-gray-100 pb-2 cursor-pointer">
+                        <summary
+                            class="flex justify-between items-center font-bold text-wine text-sm list-none outline-none">
+                            ¿En cuánto tiempo recibo el acceso?
+                            <span class="text-gold transition-transform group-open:rotate-45"><i
+                                    class="fas fa-plus text-xs"></i></span>
+                        </summary>
+                        <p class="text-xs text-gray-600 leading-relaxed pt-2">
+                            Inmediatamente. El acceso llega a tu correo electrónico segundos después de tu compra.
+                        </p>
+                    </details>
+
+                    <details class="group border-b border-gray-100 pb-2 cursor-pointer">
+                        <summary
+                            class="flex justify-between items-center font-bold text-wine text-sm list-none outline-none">
+                            ¿El cobro es mensual?
+                            <span class="text-gold transition-transform group-open:rotate-45"><i
+                                    class="fas fa-plus text-xs"></i></span>
+                        </summary>
+                        <p class="text-xs text-gray-600 leading-relaxed pt-2">
+                            No. Es un pago único. Tienes acceso de por vida sin mensualidades.
+                        </p>
+                    </details>
+
+                    <details class="group border-b border-gray-100 pb-2 cursor-pointer">
+                        <summary
+                            class="flex justify-between items-center font-bold text-wine text-sm list-none outline-none">
+                            ¿Funciona si él me bloqueó o me ignora?
+                            <span class="text-gold transition-transform group-open:rotate-45"><i
+                                    class="fas fa-plus text-xs"></i></span>
+                        </summary>
+                        <p class="text-xs text-gray-600 leading-relaxed pt-2">
+                            Sí. El módulo 'SOS Me Dejó en Visto' está diseñado específicamente para revertir esa
+                            situación.
+                        </p>
+                    </details>
+
+                    <details class="group border-b border-gray-100 pb-2 cursor-pointer">
+                        <summary
+                            class="flex justify-between items-center font-bold text-wine text-sm list-none outline-none">
+                            ¿Es un libro físico?
+                            <span class="text-gold transition-transform group-open:rotate-45"><i
+                                    class="fas fa-plus text-xs"></i></span>
+                        </summary>
+                        <p class="text-xs text-gray-600 leading-relaxed pt-2">
+                            No, es un programa digital interactivo. Puedes acceder desde tu celular, tablet o
+                            computadora en cualquier lugar.
+                        </p>
+                    </details>
+
+                    <details class="group border-b border-gray-100 pb-2 cursor-pointer">
+                        <summary
+                            class="flex justify-between items-center font-bold text-wine text-sm list-none outline-none">
+                            ¿Tengo garantía?
+                            <span class="text-gold transition-transform group-open:rotate-45"><i
+                                    class="fas fa-plus text-xs"></i></span>
+                        </summary>
+                        <p class="text-xs text-gray-600 leading-relaxed pt-2">
+                            Sí, tienes 7 días de garantía incondicional. Si no te gusta, te devolvemos el 100% de tu
+                            dinero.
+                        </p>
+                    </details>
+
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer id="main-footer" class="bg-wine py-8 text-center bg-pattern">
+                <p class="text-[10px] text-white/40 tracking-widest uppercase font-sans">Radar Masculino &copy; 2026</p>
+            </footer>
+
+        </div> <!-- End Content -->
+
+    </main>
+
+    <!-- UPSELL POPUP -->
+    <div id="upsell-modal"
+        class="fixed inset-0 bg-black/80 z-50 hidden flex items-center justify-center px-4 backdrop-blur-sm transition-opacity duration-300">
+        <div
+            class="bg-white rounded-xl max-w-sm w-full p-6 text-center relative shadow-2xl border-2 border-gold transform transition-all scale-100">
+
+            <!-- Close Button -->
+            <button onclick="closeUpsell()"
+                class="absolute top-3 right-3 text-gray-400 hover:text-wine transition-colors z-10">
+                <i class="fas fa-times text-lg"></i>
+            </button>
+
+            <!-- Icon -->
+            <div
+                class="w-16 h-16 bg-cream rounded-full flex items-center justify-center mx-auto mb-4 border border-gold animate-bounce">
+                <i class="fas fa-gift text-2xl text-wine"></i>
+            </div>
+
+            <h3 class="font-serif text-2xl font-bold text-wine mb-2">¡ESPERA! Tengo una Oferta...</h3>
+            <p class="text-xs text-gray-500 mb-6 font-sans leading-relaxed">
+                No te vayas sin los manuales. Por una diferencia mínima, llévate el <strong>Pack Completo + 7
+                    Bonos</strong>.
+            </p>
+
+            <!-- Price Comparison -->
+            <div class="bg-cream border border-gold/30 rounded-lg p-3 mb-6">
+                <p class="text-[10px] text-gray-400 uppercase tracking-widest line-through mb-1">Precio Normal: $4.90
+                </p>
+                <p class="text-3xl font-bold text-wine font-sans">$3.90 <span
+                        class="text-xs font-normal text-gray-500">(Oferta Única)</span></p>
+            </div>
+
+            <!-- Benefits -->
+            <ul class="text-left text-xs text-gray-600 mb-8 space-y-2 font-sans px-2">
+                <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> Manual "Copia y Pega"
+                    Mensajes</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> SOS "Me Olvidó"</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> 7 Bonos Exclusivos</li>
+            </ul>
+
+            <!-- CTA Upgrade -->
+            <a href="#"
+                class="block w-full bg-wine text-white font-sans font-bold text-center py-3 rounded-lg shadow-lg hover:bg-wineLight transition-all uppercase tracking-wide text-sm mb-3">
+                SÍ, QUIERO TODO POR $3.90
+            </a>
+
+            <!-- CTA Downgrade -->
+            <button onclick="closeUpsell()"
+                class="text-[10px] text-gray-400 underline hover:text-gray-600 font-sans tracking-wide">
+                No gracias, prefiero el plan básico sin bonos por $1.90
+            </button>
+        </div>
+    </div>
+
+    <!-- STICKY CTA (Visible on Scroll) -->
+    <div id="sticky-cta"
+        class="fixed bottom-0 left-0 w-full p-4 z-40 transition-all duration-500 transform translate-y-full opacity-0 pointer-events-none bg-gradient-to-t from-gray-100 to-transparent">
+        <div class="max-w-[480px] mx-auto">
+            <a href="#offer"
+                class="block w-full bg-gradient-to-r from-wineLight to-wine text-white font-sans font-bold text-center py-4 rounded-sm border-b-2 border-r-2 border-gold shadow-2xl transform hover:scale-[1.02] transition-all uppercase tracking-widest text-sm">
+                ACTIVAR MI RADAR POR $1.90
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function openUpsell() {
+            const modal = document.getElementById('upsell-modal');
+            modal.classList.remove('hidden');
+        }
+
+        function closeUpsell() {
+            const modal = document.getElementById('upsell-modal');
+            modal.classList.add('hidden');
+            // Simulate checkout redirect
+            // alert("Redirigiendo al Checkout Básico ($1.90)..."); 
+        }
+
+        document.getElementById('upsell-modal').addEventListener('click', function (e) {
+            if (e.target === this) {
+                this.classList.add('hidden');
+            }
+        });
+
+        // Sticky CTA Logic
+        // Sticky CTA Logic
+        const heroCta = document.getElementById('hero-cta');
+        const stickyCta = document.getElementById('sticky-cta');
+        const footer = document.getElementById('main-footer');
+        const offerSection = document.getElementById('offer');
+
+        let isHeroPast = false;
+        let isFooterVisible = false;
+        let isOfferVisible = false;
+
+        function updateSticky() {
+            // Show only if passed hero AND footer NOT visible AND offer NOT visible
+            if (isHeroPast && !isFooterVisible && !isOfferVisible) {
+                stickyCta.classList.remove('translate-y-full', 'opacity-0', 'pointer-events-none');
+            } else {
+                stickyCta.classList.add('translate-y-full', 'opacity-0', 'pointer-events-none');
+            }
+        }
+
+        const heroObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting && entry.boundingClientRect.top < 0) {
+                    isHeroPast = true;
+                } else {
+                    isHeroPast = false;
+                }
+                updateSticky();
+            });
+        }, { threshold: 0 });
+
+        const footerObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                isFooterVisible = entry.isIntersecting;
+                updateSticky();
+            });
+        }, { threshold: 0 });
+
+        const offerObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                isOfferVisible = entry.isIntersecting;
+                updateSticky();
+            });
+        }, { threshold: 0 });
+
+        if (heroCta) heroObserver.observe(heroCta);
+        if (footer) footerObserver.observe(footer);
+        if (offerSection) offerObserver.observe(offerSection);
+    </script>
+
+</body>
+
+</html>
