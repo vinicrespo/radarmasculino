@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Especial | Radar Masculino</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS (Local Build) -->
+    <link href="../style.css" rel="stylesheet">
+
+    <link rel="icon" type="image/webp" href="../public/radar_masculino_logo.webp">
+</head>
+
+<body class="bg-[#F0EEEA] text-bodyText antialiased font-sans flex justify-center min-h-screen">
+
+    <main class="w-full max-w-[480px] bg-[#1A1A1A] shadow-2xl min-h-screen flex flex-col justify-center relative">
+
+        <!-- BLOCO 1: HEADLINE + OFERTA FINAL -->
+        <section class="px-6 py-8 text-center">
+
+            <div class="space-y-6">
+                <h1 class="font-serif text-3xl font-bold text-gold leading-tight">
+                    Espera — Tengo algo mejor.
+                </h1>
+
+                <div class="text-white/80 text-sm leading-relaxed space-y-4 font-sans font-medium">
+                    <p>Entiendo que $9.90 no era el momento.</p>
+                    <p>Pero no quiero que te vayas sin protección.</p>
+                </div>
+
+                <div class="py-6 border-y border-white/10 my-6">
+                    <h2 class="font-serif text-xl text-white mb-2">La Biblia de las Red Flags</h2>
+                    <p class="text-xs text-gray-400 mb-4">100 señales de alerta para nunca más decir "no lo vi venir"
+                    </p>
+
+                    <div class="flex flex-col items-center">
+                        <span class="text-xs text-red-400 bg-red-900/20 px-2 py-1 rounded inline-block mb-2">40%
+                            OFF</span>
+                        <span class="text-4xl font-bold text-white">$5.90</span>
+                        <span class="text-xs text-gray-500 line-through mt-1">Antes: $9.90</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOCO 2: CTA + RECUSA -->
+        <section class="px-6 pb-12 text-center">
+
+            <!-- Main CTA -->
+            <a href="#" id="cta-downsell-aceitar"
+                class="block w-full bg-gold text-white font-bold py-4 rounded-lg shadow-gold hover:bg-[#B08D55] transition-all transform hover:-translate-y-1 mb-6 uppercase tracking-wide text-sm animate-pulse-slow">
+                SÍ, QUIERO LA BIBLIA POR $5.90 →
+            </a>
+
+            <!-- Refuse CTA -->
+            <a href="#" id="cta-downsell-recusar"
+                class="inline-block text-xs text-gray-500 underline hover:text-gray-300 transition-colors mb-8">
+                No gracias, seguir sin la guía
+            </a>
+
+            <!-- Guarantee -->
+            <div class="flex items-center justify-center gap-2 text-[10px] text-gray-600">
+                <i class="fas fa-lock text-gold"></i>
+                <span>7 días de garantía</span>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
