@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.gold-border-gradient {
+    background: linear-gradient(135deg, #C8A678 0%, #E5Cca5 50%, #C8A678 100%);
+}
+
+.text-gold-gradient {
+    background: linear-gradient(135deg, #C8A678 0%, #B08D55 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes pulse-slow {
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(74, 21, 32, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(74, 21, 32, 0);
+    }
+}
+
+.animate-pulse-slow {
+    animation: pulse-slow 3s infinite;
+}

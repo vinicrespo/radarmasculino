@@ -15,11 +15,12 @@
     <link rel="preload"
         href="https://cdn.converteai.net/d21a9e1d-910e-4254-b2bc-30b12586d2ef/69680c0a78c562fc7419b45a/main.m3u8"
         as="fetch">
-    <link rel="dns-prefetch" href="https://cdn.converteai.net">
-    <link rel="dns-prefetch" href="https://scripts.converteai.net">
-    <link rel="dns-prefetch" href="https://images.converteai.net">
-    <link rel="dns-prefetch" href="https://api.vturb.com.br">
-    <link rel="icon" type="image/png" href="public/radar_masculino_logo.png">
+    <link rel="preconnect" href="https://cdn.converteai.net">
+    <link rel="preconnect" href="https://scripts.converteai.net">
+    <link rel="preconnect" href="https://connect.facebook.net">
+    <link rel="preconnect" href="https://tracking.utmify.com.br">
+    <link rel="dns-prefetch" href="https://player.vturb.com">
+    <link rel="icon" type="image/webp" href="public/radar_masculino_logo.webp">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,33 +32,8 @@
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        cream: '#FDF8F5',      // Base clara
-                        wine: '#4A1520',       // Vinho Nobre
-                        wineLight: '#5D1924',  // Vinho mais claro para gradiente
-                        gold: '#C8A678',       // Dourado Luxo
-                        bodyText: '#333333',   // Texto leitura (Cinza Escuro)
-                        whiteSoft: '#FAFAFA',
-                    },
-                    fontFamily: {
-                        serif: ['"Playfair Display"', 'serif'],
-                        sans: ['"Montserrat"', 'sans-serif'], // Alterado para Montserrat conforme pedido de legibilidade
-                    },
-                    boxShadow: {
-                        'gold': '0 4px 20px -2px rgba(200, 166, 120, 0.4)',
-                        'card': '0 10px 30px -5px rgba(0, 0, 0, 0.08)',
-                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- Tailwind CSS (Local Build) -->
+    <link href="style.css" rel="stylesheet">
 
     <style>
         html {
@@ -101,14 +77,9 @@
         a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
         document.head.appendChild(a);
     </script>
-    
+
     <!-- Hotmart UTM -->
-    <script
-        src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-        data-utmify-prevent-subids
-        async
-        defer
-    ></script>
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
 
 </head>
 
@@ -145,8 +116,8 @@
                     <!-- VTurb Embed -->
                     <vturb-smartplayer id="vid-69680c2afc0e7a38b23cd659"
                         style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>
-                    <script
-                        type="text/javascript"> var s = document.createElement("script"); s.src = "https://scripts.converteai.net/d21a9e1d-910e-4254-b2bc-30b12586d2ef/players/69680c2afc0e7a38b23cd659/v4/player.js", s.async = !0, document.head.appendChild(s); </script>
+                    <script type="text/javascript"
+                        defer> var s = document.createElement("script"); s.src = "https://scripts.converteai.net/d21a9e1d-910e-4254-b2bc-30b12586d2ef/players/69680c2afc0e7a38b23cd659/v4/player.js", s.async = !0, document.head.appendChild(s); </script>
                 </div>
             </div>
 
@@ -268,8 +239,8 @@
                     <div class="bg-white p-6 shadow-card border border-gray-100 rounded-xl relative">
                         <div class="flex items-center mb-4">
                             <!-- Placeholder Image 1 -->
-                            <img src="https://i.pravatar.cc/150?img=9" alt="Valentina"
-                                class="w-12 h-12 rounded-full object-cover border-2 border-gold/50 mr-4">
+                            <img src="https://i.pravatar.cc/48?img=9" alt="Valentina" width="48" height="48"
+                                loading="lazy" class="w-12 h-12 rounded-full object-cover border-2 border-gold/50 mr-4">
                             <div>
                                 <h4 class="text-sm font-bold text-wine font-sans">Valentina G.</h4>
                                 <div class="flex text-gold text-[10px] gap-1">
@@ -288,8 +259,8 @@
                     <div class="bg-white p-6 shadow-card border border-gray-100 rounded-xl relative">
                         <div class="flex items-center mb-4">
                             <!-- Placeholder Image 2 -->
-                            <img src="https://i.pravatar.cc/150?img=5" alt="Mariana"
-                                class="w-12 h-12 rounded-full object-cover border-2 border-gold/50 mr-4">
+                            <img src="https://i.pravatar.cc/48?img=5" alt="Mariana" width="48" height="48"
+                                loading="lazy" class="w-12 h-12 rounded-full object-cover border-2 border-gold/50 mr-4">
                             <div>
                                 <h4 class="text-sm font-bold text-wine font-sans">Mariana S.</h4>
                                 <div class="flex text-gold text-[10px] gap-1">
